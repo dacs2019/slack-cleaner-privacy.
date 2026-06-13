@@ -48,4 +48,5 @@ El uso de la informacion recibida se limita a proveer y mejorar la funcion princ
 
 ## Contacto
 
-Para soporte o preguntas de privacidad: xnombre.prohibidox@gmail.com
+Para soporte o preguntas de privacidad, contáctame en Instagram: **@dacs.dev_**
+
