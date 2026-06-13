@@ -14,6 +14,7 @@ La extension puede procesar localmente:
 - Timestamps de mensajes propios necesarios para solicitar su eliminacion.
 - Credenciales internas de la sesion local de Slack Web, solo durante la operacion de deteccion, vista previa o borrado.
 - Estado local del trabajo de borrado, como progreso, cantidad borrada, cantidad omitida y registros tecnicos.
+- Estado local del limite Free, como mensajes borrados dentro de la ventana actual y hora de reinicio verificada por red.
 
 La extension no solicita al usuario que copie tokens ni contrasenas.
 
@@ -26,6 +27,7 @@ Los datos se usan solo para:
 - Mostrar una vista previa del rango de mensajes que se borraria.
 - Enviar solicitudes a Slack para borrar mensajes propios seleccionados por el usuario.
 - Mantener el progreso local si el popup se cierra durante el trabajo.
+- Verificar una hora UTC de red para aplicar el limite Free de 5 mensajes cada 3 minutos sin depender del reloj del equipo.
 
 ## Almacenamiento
 
@@ -39,6 +41,7 @@ La extension no vende datos ni los usa para publicidad. La extension se comunica
 
 - Slack, para leer el historial necesario y borrar mensajes propios.
 - ExtensionPay, cuando el usuario consulta o activa funciones Pro.
+- WorldTimeAPI o TimeAPI, solo para obtener la hora UTC actual usada por el limite Free.
 
 No se transfiere contenido de Slack a servidores del desarrollador.
 
@@ -48,5 +51,4 @@ El uso de la informacion recibida se limita a proveer y mejorar la funcion princ
 
 ## Contacto
 
-Para soporte o preguntas de privacidad, contáctame en Instagram: **@dacs.dev_**
-
+Para soporte o preguntas de privacidad, usa el correo de soporte publicado en la ficha de Chrome Web Store.
